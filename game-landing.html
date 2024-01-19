@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love match</title>
+    <link rel="icon" href="https://img.itch.zone/aW1nLzE2ODQ5NTgucG5n/347x500/grp9WT.png">
+    <link rel="stylesheet" href="game-landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'Pixeboy';
+        src: url('Pixeboy-z8XGD.ttf');
+    }
+</style>
+<body>
+    <div id="top-line"></div>
+    <div class="main-container">
+        <div id="left-line"></div>
+        <div id="mid-container">
+            <div class="header-container">
+                <h1>love<br>match</h1>
+            </div>
+            <div class="start-container">
+                <a id="start-link" href="game-quiz.html">
+                    <h1 id="start-button" style="display: none;">GO!</h1>
+                </a>
+            </div>
+            <div class="sprite-container">
+                <img id="me" src="assets/me-icon.png">
+                <img id="dialogue-box" src="assets/dialogue-box.gif" style="display: none;">
+            </div>
+        </div>
+        <div id="right-line"></div>
+    </div>
+    <div id="bottom-line"></div>
+</body>
+<script>
+    setTimeout(function () {
+        var dialog = document.getElementById('dialogue-box');
+        dialog.style.display = 'inline';
+    }, 900);
+    setTimeout(function () {
+        var char = document.getElementById('me');
+        var dialogue = document.getElementById('dialogue-box');
+        var go = document.getElementById('start-button');
+        char.style.display = 'none';
+        dialogue.style.display = 'none';
+        go.style.display = 'block';
+
+    },6000);
+
+</script>
+</html>

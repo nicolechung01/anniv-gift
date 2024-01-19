@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: #f8dada;
+}
+#top-line {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background-color: #f8dada;
+    margin-bottom: 18px;
+}
+#bottom-line {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background-color: #f8dada;
+    margin-top: 18px;
+}
+
+.main-container {
+    padding: 0;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    outline: #1a1a1a solid 2px;
+}
+#left-line {
+    background-color: transparent;
+    width: 100px;
+    border-right: #1a1a1a solid 2px;
+}
+#right-line {
+    background-color: transparent;
+    width: 100px;
+    border-left: #1a1a1a solid 2px;
+}
+#mid-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+.header-container h1 {
+    font-family: 'Pixeboy';
+    font-size: 180px;
+    color: #b70000;
+    z-index: 2;
+    margin: 20px;
+    margin-top: 50px;
+    text-align: center;
+    animation: blinker 2s infinite;
+}
+@keyframes blinker {
+    0%,25%,50.1%,75% {
+		color: #b70000;
+		text-shadow: none;
+	}
+	25.1%,50%,75.1%,100% {
+		color: #fff;
+    } 
+}   
+.start-container {
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+#start-button {
+    font-family: 'Pixeboy';
+    font-size: 100px;
+    color: #1a1a1a;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    bottom: 200px;
+    left: 669px;
+}
+#start-link {
+    text-decoration: none;
+}
+.sprite-container {
+    height: auto;
+}
+#me {
+    height: 210px;
+    z-index: 3;
+    position: absolute;
+    left: 350px;
+    bottom: 28px;
+}
+#dialogue-box {
+    height: 150px;
+    z-index: 5;
+    position: absolute;
+    left: 550px;
+    bottom: 60px;
+
+}

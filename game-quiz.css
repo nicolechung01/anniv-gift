@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    background-color: #f8dada;
+}
+#top-line {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background-color: #f8dada;
+    margin-bottom: 18px;
+}
+#bottom-line {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background-color: #f8dada;
+    margin-top: 18px;
+}
+
+.main-container {
+    padding: 0;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    outline: #1a1a1a solid 2px;
+}
+#left-line {
+    background-color: transparent;
+    width: 100px;
+    border-right: #1a1a1a solid 2px;
+}
+#right-line {
+    background-color: transparent;
+    width: 100px;
+    border-left: #1a1a1a solid 2px;
+}
+#mid-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#quit-heart {
+    position: absolute;
+    bottom: 70px;
+    height: 60px;
+    right: 105px;
+    z-index: 7;
+}
+#quit-text {
+    font-family: 'Pixeboy';
+    font-size: 30px;
+    position: absolute;
+    right: 105px;
+    bottom: 20px;
+}
+.app {
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px;
+}
+.quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+#question-container {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#answer-input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    margin-bottom: 60px;
+    border-radius: 35px;
+    padding: 10px;
+    text-decoration: none;
+}
+#feedback-container {
+    height: 50px;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#quiz-failed-msg {
+    text-align: center;
+}
+#quiz-done-msg {
+    text-align: center;
+}
+.done-feedback {
+    font-family: 'Pixeboy';
+    font-size: 120px;
+    margin: 0;
+    color: #c90f0f;
+    margin-bottom: 70px;
+}
+.failed-feedback {
+    font-family: 'Pixeboy';
+    font-size: 120px;
+    margin: 0;
+    color: #c90f0f;
+    margin-bottom: 70px;
+}
+.button {
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    background-color: #fff;
+    outline: #1a1a1a solid 2px;
+    border-radius: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+.button:hover {
+    color: #fff;
+    background-color: #c90f0f;
+    outline: #1a1a1a solid 2px;
+    border: none;
+}
+#home-button, #play-again-button, #try-again-button {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    outline: #1a1a1a solid 2px;
+}
+#home-link
+#nav-container {
+    position: relative;
+    top: 150px;
+}
+#trophy {
+    position: absolute;
+    z-index: 5;
+    height: 210px;
+    bottom: 8px;
+    left: 260px
+}
+#me {
+    height: 210px;
+    z-index: 3;
+    position: absolute;
+    left: 100px;
+    bottom: 28px;
+    animation: jump 1s infinite;
+}
+@keyframes jump {
+    25% {
+        bottom: 35px;
+    }
+    75% {
+        bottom: 28px;
+    }
+  }
