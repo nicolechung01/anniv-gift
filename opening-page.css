@@ -5,11 +5,13 @@ body {
     text-decoration: none;
 }
 h1 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    font-style: italic;
+    font-family: 'Pixeboy';
+    font-weight: 400;
     color: #1a1a1a;
     cursor: pointer;
+    font-size: 70px;
+    margin: 0;
+    margin-bottom: 47px;
 }
 .container {
     display: flex;
