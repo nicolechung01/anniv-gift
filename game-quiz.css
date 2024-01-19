@@ -141,7 +141,10 @@ body {
     margin-right: 20px;
     outline: #1a1a1a solid 2px;
 }
-#home-link
+#home-link {
+    text-decoration: none;
+    color: #1a1a1a;
+}
 #nav-container {
     position: relative;
     top: 150px;
