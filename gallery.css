@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #FFFAF3;
+    background-color: #fffdf7;
     height: 200vh;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Proxima';
 }
 .main-container {
     height: 100vh; 

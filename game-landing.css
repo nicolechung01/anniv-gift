@@ -1,38 +1,21 @@
 body {
     margin: 0;
-    background-color: #FFFAF3;
+    background-color: #fce2e2;
 }
-#top-line {
-    margin: 0;
-    padding: 0;
-    height: 30px;
-    background-color: #FFFAF3;
-    margin-bottom: 18px;
-}
-#bottom-line {
-    margin: 0;
-    padding: 0;
-    height: 30px;
-    background-color: #FFFAF3;
-    margin-top: 18px;
-}
+.box-outline {
+    outline: #1a1a1a 3px solid;
+    height: 700px;
+    width: 1260px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
 
+}
 .main-container {
     padding: 0;
     height: 700px;
     display: flex;
     flex-direction: row;
-    outline: #1a1a1a solid 2px;
-}
-#left-line {
-    background-color: transparent;
-    width: 100px;
-    border-right: #1a1a1a solid 2px;
-}
-#right-line {
-    background-color: transparent;
-    width: 100px;
-    border-left: #1a1a1a solid 2px;
 }
 #mid-container {
     margin: 0;
@@ -54,7 +37,7 @@ body {
     color: #b70000;
     z-index: 2;
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     animation: blinker 2s infinite;
 }
@@ -79,8 +62,9 @@ body {
     cursor: pointer;
     margin: 0;
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     left: 669px;
+    z-index: 10;
 }
 #start-link {
     text-decoration: none;
@@ -93,7 +77,7 @@ body {
     z-index: 3;
     position: absolute;
     left: 350px;
-    bottom: 28px;
+    bottom: 26px;
 }
 #dialogue-box {
     height: 150px;
