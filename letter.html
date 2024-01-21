@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dear philip</title>
+    <script language="JavaScript">
+        var password;
+        var pass1 = "stinkybaby";
+
+        while (true) {
+            password = prompt('Enter Password', '');
+        if (password === pass1) {
+            showContent(); // Call a function to display the content
+            break;
+        } else {
+            alert('Incorrect Password!');
+        }
+        function showContent() {
+            document.body.style.display = 'block';
+        }
+    }
+       
+    </script>
+    <link rel="icon" href="assets/favicon.png">
+    <style>
+        /* Initially hide the body */
+        body {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+
+<!-- Your HTML body content goes here -->
+
 </body>
 </html>
