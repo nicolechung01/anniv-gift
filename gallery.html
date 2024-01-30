@@ -17,6 +17,9 @@
     }
 </style>
 <body>
+    <audio id="audio" controls>
+        <source id="song" src="" type="audio/mp3">
+    </audio>
     <div class="main-container">
         <div class="section" style="gap: 30px; flex-direction: column;">
             <div style="margin: 0; padding: 0;">
@@ -230,5 +233,43 @@
             </a>
         </div>
     </div>
+    <script>
+        var audio = document.getElementById("audio");
+        var song = document.getElementById("song");
+    
+        var playlist = [
+            "music/everything.mp3",
+            "music/only.mp3",
+            "music/bed.mp3"
+        ];
+    
+        var currentSongIndex = 0;
+        var playlistStarted = false;
+    
+        window.onload = function() {
+            document.addEventListener("keydown", function(event) {
+                if (event.keyCode === 32 && !playlistStarted) {
+                    event.preventDefault();
+                    playlistStarted = true;
+                    startPlaylist();
+                }
+            });
+        };
+    
+        function startPlaylist() {
+            playNextSong();
+        }
+    
+        function playNextSong() {
+            song.src = playlist[currentSongIndex];
+            audio.load();
+            audio.play();
+            currentSongIndex++;
+            if (currentSongIndex >= playlist.length) {
+                currentSongIndex = 0;
+            }
+            audio.addEventListener("ended", playNextSong);
+        }
+    </script>
 </body>
 </html>

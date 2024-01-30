@@ -20,3 +20,6 @@ body {
     align-items: center;
     scroll-snap-align: start;
 }
+#audio {
+    display: none;
+}
