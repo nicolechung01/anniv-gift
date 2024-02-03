@@ -1,0 +1,31 @@
+body {
+    background-color: #fffdf7;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    font-family: 'Signaline';
+    font-size: 60px;
+    margin: 0;
+}
+.letter {
+    text-align: center;
+    width: 800px;
+}
+.letter p {
+    font-family: 'Proxima';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.letter h2 {
+    font-family: 'Signaline';
+    font-size: 45px;
+margin: 0;
+}
