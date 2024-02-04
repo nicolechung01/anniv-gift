@@ -151,20 +151,20 @@ body {
     height: 200px;
     position: absolute;
     right: 185px;
-    bottom: 528px;
+    bottom: 515px;
     z-index: 1;
 }
 #auggie {
     height: 200px;
     position: absolute;
     right: 185px;
-    bottom: 313px;
+    bottom: 302px;
     z-index: 1;
 }
 #nala {
     height: 200px;
     position: absolute;
     right: 185px;
-    bottom: 100px;
+    bottom: 90px;
     z-index: 1;
 }
