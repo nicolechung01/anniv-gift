@@ -244,22 +244,11 @@
         ];
     
         var currentSongIndex = 0;
-        var playlistStarted = false;
     
         window.onload = function() {
-            document.addEventListener("click", function(event) {
-                if (!playlistStarted && event.target !== audio) {
-                    playlistStarted = true;
-                    startPlaylist();
-                }
-            });
-        };
-    
-        function startPlaylist() {
-            playNextSong();
+            startPlaylist();
         }
-    
-        function playNextSong() {
+        function startPlaylist() {
             song.src = playlist[currentSongIndex];
             audio.load();
             audio.play();
@@ -267,8 +256,9 @@
             if (currentSongIndex >= playlist.length) {
                 currentSongIndex = 0;
             }
-            audio.addEventListener("ended", playNextSong);
+            audio.addEventListener("ended", startPlaylist);
         }
+
     </script>
 </body>
 </html>
