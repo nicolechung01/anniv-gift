@@ -18,6 +18,9 @@
     }
 </style>
 <body>
+    <audio id="audio" controls>
+        <source id="song" src="music/you.mp3" type="audio/mp3">
+    </audio>
     <div class="main">
         <div class="header">
             <h1>dear philip,</h1>
@@ -31,10 +34,24 @@
                 I hope you know how much I love you, just as you are.<br>
                 I'll work harder so that you feel it every single day.<br><br>
                 I'm so excited and I can't wait to be working adults together,<br>
-                to be in the same city together, and to share our lives with each other.💖
+                to be in the same city together, and to share our lives with each other.
             </p>
             <h2>love, nicole</h2>
         </div>
+        <a href="welcome-page.html">
+            <img src="assets/quitbutton.webp" height="40px">
+        </a>
     </div>
+    <script>
+        var audio = document.getElementById("audio");
+
+        window.onload = function() {
+        playSong(); // Automatically play the song when the window loads
+        };
+
+        function playSong() {
+            audio.play();
+        }
+    </script>
 </body>
 </html>

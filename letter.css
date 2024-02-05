@@ -29,3 +29,6 @@ body {
     font-size: 45px;
 margin: 0;
 }
+#audio {
+    display: none;
+}

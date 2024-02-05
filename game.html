@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love match</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'Pixeboy';
+        src: url('Pixeboy-z8XGD.ttf');
+    }
+    @font-face {
+        font-family: 'Proxima';
+        src: url('proximanova_regular.ttf');
+    }
+</style>
+<body>
+    <audio id="audio" controls>
+        <source id="song" src="music/game.mp3" type="audio/mp3">
+    </audio>
+    <div class="main-container">
+        <div id="mid-container">
+            <div class="header-container">
+                <h1 id="header">love<br>match</h1>
+            </div>
+            <div class="start-container">
+                <a>
+                    <h1 id="start-button" style="display: none;">GO!</h1>
+                </a>
+            </div>
+            <div class="sprite-container">
+                <img id="me" src="assets/me-icon.png">
+                <img id="dialogue-box" src="assets/dialogue-box.gif" style="display: none;">
+            </div>
+        </div>
+        <div id="game-container" style="display: none;">
+            <a href="welcome-page.html">
+                <img id="quit-heart" src="assets/quitbutton.webp">
+            </a>
+            <p id="quit-text">QUIT</p>
+            <div class="app">
+                <div class="quiz">
+                    <div id="question-container"></div>
+                    <input type="text" id="answer-input" spellcheck="false">
+                    <button onclick="checkAnswer()" class="button" id="check-button">Check Answer</button>
+                    <div id="feedback-container"></div>
+                    <div id="quiz-failed-msg"></div>
+                    <div id="failed-nav-container" style="display: none;">
+                        <button onclick="tryAgain()" class="button" id="try-again-button">Try Again</button>
+                        <button class="button" id="home-button"><a id="home-link" href="welcome-page.html" target="">Go Home</a></button>
+                    </div>
+                    <div id="quiz-done-msg"></div>
+                   <div id="won-nav-container" style="display: none;">
+                        <button onclick="tryAgain()" class="button" id="play-again-button">Play Again</button>
+                        <button class="button" id="home-button"><a id="home-link" href="welcome-page.html">Go Home</a></button>
+                    </div>
+                    <img id="trophy" src="assets/trophy.png" style="display: none;">
+                    <img id="me2" src="assets/me-icon.png" style="display: none;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-outline"></div>
+</body>
+<script src="game-quiz.js"></script>
+<script>
+    var audio = document.getElementById("audio");
+    var song = document.getElementById("song");
+
+    setTimeout(function () {
+        var dialog = document.getElementById('dialogue-box');
+        dialog.style.display = 'inline';
+    }, 900);
+    setTimeout(function () {
+        var game = document.getElementById('game-container');
+        var mid = document.getElementById('mid-container');
+        var char = document.getElementById('me');
+        var dialogue = document.getElementById('dialogue-box');
+        var go = document.getElementById('start-button');
+        char.style.display = 'none';
+        dialogue.style.display = 'none';
+        go.style.display = 'block';
+
+        go.addEventListener('click', function() {
+            go.style.display = 'none';
+            mid.style.display = 'none';
+            game.style.display = 'flex';
+        });
+
+    },6000);
+
+    var audio = document.getElementById("audio");
+
+    window.onload = function() {
+    playSong();
+    };
+
+    function playSong() {
+        audio.play();
+    }
+</script>
+</html>
