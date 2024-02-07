@@ -17,8 +17,8 @@
     }
 </style>
 <body>
-    <audio id="audio" controls>
-        <source id="song" src="" type="audio/mp3">
+    <audio id="audio" controls autoplay loop>
+        <source id="song" src="music/everything.mp3" type="audio/mp3">
     </audio>
     <div class="main-container">
         <div class="section" style="gap: 30px; flex-direction: column;">
@@ -233,32 +233,5 @@
             </a>
         </div>
     </div>
-    <script>
-        var audio = document.getElementById("audio");
-        var song = document.getElementById("song");
-    
-        var playlist = [
-            "music/everything.mp3",
-            "music/only.mp3",
-            "music/bed.mp3"
-        ];
-    
-        var currentSongIndex = 0;
-    
-        window.onload = function() {
-            startPlaylist();
-        }
-        function startPlaylist() {
-            song.src = playlist[currentSongIndex];
-            audio.load();
-            audio.play();
-            currentSongIndex++;
-            if (currentSongIndex >= playlist.length) {
-                currentSongIndex = 0;
-            }
-            audio.addEventListener("ended", startPlaylist);
-        }
-
-    </script>
 </body>
 </html>
