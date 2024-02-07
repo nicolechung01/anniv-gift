@@ -2,39 +2,37 @@ body {
     margin: 0;
     background-color: #fffdf7;
 }
-
-
 .main-container {
     padding: 0;
-    height: 700px;
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    height: 100vh;
 }
 
-#mid-container {
-    margin: 0;
-    padding: 0;
-    padding-top: 80px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
 .header-container {
     display: flex;
+    flex: 4;
     flex-direction: column;
+    justify-content: center;
+}
+#h1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-container h1 {
     font-family: 'Signaline';
     font-size: 75px;
     color: #1a1a1a;
     font-weight: 500;
-    z-index: 4;
     margin: 0;
-    padding: 0;
-    position: relative;
-    top: 30px
+    width: fit-content;
 }
 .header-container h2 {
     font-family: 'Signaline';
@@ -42,95 +40,85 @@ body {
     font-weight: 500;
     color: #262626;
     margin: 0;
-    margin-left: 430px;
+    margin-left: 400px;
     padding: 0;
-    z-index: 2;
-    position: relative;
-    bottom: 40px;
 }
 .pic-container {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#left {
-    font-family: 'Proxima';
-    font-weight: 300;
-    font-size: 25px;
-    color: #1a1a1a;
-    rotate: -90deg;
+#main-pic {
+    width: auto;
     position: relative;
-    right: 570px;
-    top: 160px;
-}
-#right {
-    font-family: 'Proxima';
-    font-weight: 300;
-    font-size: 25px;
-    color: #1a1a1a;
-    rotate: 90deg;
-    position: relative;
-    left: 140px;
-    bottom: 160px;
 }
 #heart1 {
     z-index: 3;
     position: absolute;
-    top: 280px;
-    left: 400px;
+    bottom: 270px;
+    right: 380px;
     height: 90px;
 }
 #heart2 {
     z-index: 3;
     position: absolute;
-    top: 235px;
-    left: 440px;
-    height: 70px;
-    rotate: -10deg;
+    height: 90px;
+    left: 190px;
+    bottom: 150px;
 }
 #heart3 {
     z-index: 3;
     position: absolute;
-    height: 80px;
-    top: 340px;
-    left: 390px;
-}
-#dash {
-    z-index: 3;
-    position: absolute;
-    height: 70px;
-    top: 280px;
-    left: 760px;
-    rotate: -10deg;
+    height: 90px;
+    left: 180px;
+    bottom: 215px;
 }
 #star {
     z-index: 3;
     position: absolute;
-    height: 70px;
-    top: 410px;
-    left: 730px;
+    height: 90px;
+    right: 65px;
+    bottom: 155px;
+}
+#dash {
+    z-index: 3;
+    position: absolute;
+    height: 90px;
+    right: 5px;
+    bottom: 270px;
 }
 #photobooth {
     z-index: 1;
     object-fit: cover;
     outline: #1a1a1a solid 2px;
     height: 450px;
-    position: relative;
-    left: 20px;
 }
-
 .menu-container {
     display: flex;
+    flex: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
-    z-index: 10;
+    margin-bottom: 50px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
+    width: 200px;
+    height: 190px; 
+}
+.cat {
+    width: auto;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: -5;
 }
 .menu-button {
-    margin-top: 90px;
-    margin-bottom: 90px;
-    margin-left: 30px;
-    margin-right: 30px;
     background-color: #fffdf7;
     color: #1a1a1a;
     border: none;
@@ -141,30 +129,10 @@ body {
     font-size: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 30;
 }
 .menu-button:hover{
     color: #fff;
     background-color: #c81515;
     outline: #1a1a1a solid 2px;
-}
-#sev {
-    height: 200px;
-    position: absolute;
-    right: 185px;
-    bottom: 515px;
-    z-index: 1;
-}
-#auggie {
-    height: 200px;
-    position: absolute;
-    right: 185px;
-    bottom: 302px;
-    z-index: 1;
-}
-#nala {
-    height: 200px;
-    position: absolute;
-    right: 185px;
-    bottom: 90px;
-    z-index: 1;
 }
