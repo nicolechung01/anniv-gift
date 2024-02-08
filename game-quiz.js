@@ -33,7 +33,8 @@ function checkAnswer() {
     const quitHeart = document.getElementById('quit-heart');
     const quitText = document.getElementById('quit-text');
     const trophy = document.getElementById('trophy');
-    const me = document.getElementById('me');
+    const me = document.getElementById('me2');
+    const wrap = document.getElementById('wrap2');
 
 
 
@@ -49,6 +50,7 @@ function checkAnswer() {
             } else {
                 doneMsg.innerHTML = '<p class="done-feedback">Congratulations!<br>You won!</p>';
                 wonNav.style.display = 'block';
+                wrap.style.display = 'block';
                 trophy.style.display = 'block';               
                 me.style.display = 'block';
 

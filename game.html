@@ -24,50 +24,54 @@
     <audio id="audio" controls>
         <source id="song" src="music/game.mp3" type="audio/mp3">
     </audio>
-    <div class="main-container">
-        <div id="mid-container">
-            <div class="header-container">
-                <h1 id="header">love<br>match</h1>
+    <div class="box-outline">
+        <div class="main-container">
+            <div id="mid-container">
+                <div class="header-container">
+                    <h1 id="header">love<br>match</h1>
+                </div>
+                <div class="start-container">
+                    <a>
+                        <h1 id="start-button" style="display: none;">GO!</h1>
+                    </a>
+                </div>
+                <div class="sprite-container">
+                    <div id="wrap">
+                        <img id="me" src="assets/me-icon.png">
+                    <img id="dialogue-box" src="assets/dialogue-box.gif">
+                    </div>
+                </div>
             </div>
-            <div class="start-container">
-                <a>
-                    <h1 id="start-button" style="display: none;">GO!</h1>
+            <div id="game-container" style="display: none;">
+                <a href="welcome-page.html">
+                    <img id="quit-heart" src="assets/quitbutton.webp">
                 </a>
-            </div>
-            <div class="sprite-container">
-                <img id="me" src="assets/me-icon.png">
-                <img id="dialogue-box" src="assets/dialogue-box.gif" style="display: none;">
-            </div>
-        </div>
-        <div id="game-container" style="display: none;">
-            <a href="welcome-page.html">
-                <img id="quit-heart" src="assets/quitbutton.webp">
-            </a>
-            <p id="quit-text">QUIT</p>
-            <div class="app">
-                <div class="quiz">
-                    <div id="question-container"></div>
-                    <input type="text" id="answer-input" spellcheck="false">
-                    <button onclick="checkAnswer()" class="button" id="check-button">Check Answer</button>
-                    <div id="feedback-container"></div>
-                    <div id="quiz-failed-msg"></div>
-                    <div id="failed-nav-container" style="display: none;">
-                        <button onclick="tryAgain()" class="button" id="try-again-button">Try Again</button>
-                        <button class="button" id="home-button"><a id="home-link" href="welcome-page.html" target="">Go Home</a></button>
+                <p id="quit-text">QUIT</p>
+                <div class="app">
+                    <div class="quiz">
+                        <div id="question-container"></div>
+                        <input type="text" id="answer-input" spellcheck="false">
+                        <button onclick="checkAnswer()" class="button" id="check-button">Check Answer</button>
+                        <div id="feedback-container"></div>
+                        <div id="quiz-failed-msg"></div>
+                        <div id="failed-nav-container" style="display: none;">
+                            <button onclick="tryAgain()" class="button" id="try-again-button">Try Again</button>
+                            <button class="button" id="home-button"><a id="home-link" href="welcome-page.html" target="">Go Home</a></button>
+                        </div>
+                        <div id="quiz-done-msg"></div>
+                        <div id="won-nav-container" style="display: none;">
+                            <button onclick="tryAgain()" class="button" id="play-again-button">Play Again</button>
+                            <button class="button" id="home-button"><a id="home-link" href="welcome-page.html">Go Home</a></button>
+                        </div>
+                        <div id="wrap2" style="display: none;">
+                            <img id="trophy" src="assets/trophy.png" style="display: none;">
+                            <img id="me2" src="assets/me-icon.png" style="display: none;">
+                        </div>
                     </div>
-                    <div id="quiz-done-msg"></div>
-                   <div id="won-nav-container" style="display: none;">
-                        <button onclick="tryAgain()" class="button" id="play-again-button">Play Again</button>
-                        <button class="button" id="home-button"><a id="home-link" href="welcome-page.html">Go Home</a></button>
-                    </div>
-                    <img id="trophy" src="assets/trophy.png" style="display: none;">
-                    <img id="me2" src="assets/me-icon.png" style="display: none;">
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="box-outline"></div>
 </body>
 <script src="game-quiz.js"></script>
 <script>
